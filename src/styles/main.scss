@@ -1,0 +1,77 @@
+@import 'variables';
+
+// Import Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+// Import Bootstrap Icons
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+
+// Global Styles
+html,
+body {
+    overflow-x: hidden;
+    font-family: $font-family-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: $body-bg;
+    color: $body-color;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family-heading;
+    letter-spacing: -0.02em;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: $transition-base;
+
+    &:hover {
+        color: $info;
+    }
+}
+
+// Global utility classes
+.section-padding {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.text-gradient {
+    background: linear-gradient(135deg, $primary, $info);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.glass-nav {
+    @include glassmorphism;
+    position: sticky;
+    top: 0;
+    z-index: 1030;
+}
+
+// Hide scrollbar for clean premium look
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: $light;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $secondary;
+    border-radius: $border-radius;
+
+    &:hover {
+        background: darken($secondary, 10%);
+    }
+}
