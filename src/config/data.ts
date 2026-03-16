@@ -19,11 +19,11 @@ export const ASSETS = {
 // PRODUCTS CATALOG
 // ---------------------------------------------------------------------------
 export const PRODUCTS: Product[] = [
-    { id: '1', name: 'Premium Rotating LED Lamp', category: 'LED Photo Frames', price: '₹1,499', image: 'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=600&auto=format&fit=crop' },
-    { id: '5', name: 'Wooden Photo Frame', category: 'LED Photo Frames', price: '₹799', image: 'https://images.unsplash.com/photo-1583847268964-b28e5f17468e?q=80&w=600&auto=format&fit=crop' },
+    { id: '1', name: 'Customized Chocolates', category: 'Birthday Gifts', price: '₹10', image: 'https://www.instagram.com/reel/DTVJIoCD9R9/?igsh=YXVrM3A1a25ncmx5' },
+    { id: '5', name: 'Bubble Machines', category: 'LED Photo Frames', price: '₹299', image: 'https://www.instagram.com/reel/DRT74_Ukyzb/?igsh=d3UwZjM3dTJnbDRi' },
     { id: '2', name: 'Custom Engraved Wooden Plaque', category: 'Anniversary Gifts', price: '₹899', image: 'https://images.unsplash.com/photo-1594900388701-49b8de65e91b?q=80&w=600&auto=format&fit=crop' },
-    { id: '6', name: 'Couple Name Neon Sign', category: 'Anniversary Gifts', price: '₹2,499', image: 'https://images.unsplash.com/photo-1563243938-1644c3ec81b7?q=80&w=600&auto=format&fit=crop' },
-    { id: '3', name: '3D Crystal Cube with LED Base', category: 'Birthday Gifts', price: '₹1,299', image: 'https://images.unsplash.com/photo-1565155658603-9d8a5732ac6a?q=80&w=600&auto=format&fit=crop' },
+    { id: '6', name: 'Couple Name Neon Sign', category: 'Anniversary Gifts', price: '₹700', image: 'https://images.unsplash.com/photo-1563243938-1644c3ec81b7?q=80&w=600&auto=format&fit=crop' },
+    { id: '3', name: '3D Crystal Cube with LED Base', category: 'Birthday Gifts', price: '₹299', image: 'https://images.unsplash.com/photo-1565155658603-9d8a5732ac6a?q=80&w=600&auto=format&fit=crop' },
     { id: '7', name: 'Photo Magic Mug', category: 'Birthday Gifts', price: '₹499', image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=600&auto=format&fit=crop' },
     { id: '4', name: 'Personalized Wallet & Pen Combo', category: 'Corporate Gifting', price: '₹999', image: 'https://images.unsplash.com/photo-1627384113743-6bd5a479fffd?q=80&w=600&auto=format&fit=crop' },
     { id: '8', name: 'Custom Logo Organizer Diary', category: 'Corporate Gifting', price: '₹599', image: 'https://images.unsplash.com/photo-1544816155-12df9643f363?q=80&w=600&auto=format&fit=crop' },

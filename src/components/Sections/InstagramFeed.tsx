@@ -29,7 +29,7 @@ const InstagramFeed: React.FC = () => {
                     {INSTAGRAM_POSTS.map((img, idx) => (
                         <div className="col-4 col-md-2" key={idx}>
                             <motion.a
-                                href={ENV.INSTAGRAM_URL}
+                                href={img}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="d-block position-relative overflow-hidden rounded-3 shadow-sm"
