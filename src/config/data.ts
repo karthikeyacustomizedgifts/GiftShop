@@ -50,10 +50,10 @@ export const GALLERY_IMAGES = [
 // INSTAGRAM FEED MOCKS
 // ---------------------------------------------------------------------------
 export const INSTAGRAM_POSTS = [
-    'https://images.unsplash.com/photo-1513201099705-a9746e1e201f?q=80&w=400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1583847268964-b28e5f17468e?q=80&w=400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1594900388701-49b8de65e91b?q=80&w=400&auto=format&fit=crop',
-    'https://images.unsplash.com/photo-1563243938-1644c3ec81b7?q=80&w=400&auto=format&fit=crop',
+    'https://www.instagram.com/reel/DTVJIoCD9R9/?igsh=YXVrM3A1a25ncmx5',
+    'https://www.instagram.com/reel/DRT74_Ukyzb/?igsh=d3UwZjM3dTJnbDRi',
+    'https://www.instagram.com/reel/DRKIVeBk1ua/?igsh=OXB4MjI5cjAyMGxq',
+    'https://www.instagram.com/reel/DRBvnMBkzSf/?igsh=bmp0b2wzd3I0bTBs',
     'https://images.unsplash.com/photo-1565155658603-9d8a5732ac6a?q=80&w=400&auto=format&fit=crop',
     'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?q=80&w=400&auto=format&fit=crop'
 ];
