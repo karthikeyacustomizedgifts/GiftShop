@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ENV } from '../../config/env';
+import { useCart } from '../../context/CartContext';
 
 export interface Product {
     id: string;
@@ -17,6 +18,7 @@ interface ProductCardProps {
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
+    const { addToCart } = useCart();
     const WHATSAPP_NUMBER = ENV.WHATSAPP_NUMBER;
     const message = encodeURIComponent(`Hello, I want to order this customized gift: ${product.name}`);
     const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
@@ -51,10 +53,18 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, index }) => {
                 {product.price && <h6 className="fw-bold mb-4">{product.price}</h6>}
 
                 <div className="mt-auto d-flex flex-column gap-2">
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-success rounded-pill fw-medium d-flex align-items-center justify-content-center gap-2 py-2">
-                        <i className="bi bi-whatsapp"></i> Order on WhatsApp
-                    </a>
-                    <button className="btn btn-outline-dark rounded-pill fw-medium py-2">View Details</button>
+                    <button 
+                        onClick={() => addToCart(product)}
+                        className="btn btn-dark rounded-pill fw-medium d-flex align-items-center justify-content-center gap-2 py-2"
+                    >
+                        <i className="bi bi-cart-plus"></i> Add to Cart
+                    </button>
+                    <div className="d-flex gap-2">
+                        <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="btn btn-success rounded-pill fw-medium d-flex align-items-center justify-content-center gap-2 py-2 flex-grow-1">
+                            <i className="bi bi-whatsapp"></i> Buy
+                        </a>
+                        <button className="btn btn-outline-dark rounded-pill fw-medium py-2 flex-grow-1">Details</button>
+                    </div>
                 </div>
             </div>
         </motion.div>

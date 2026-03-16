@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ENV } from '../../config/env';
+import { useCart } from '../../context/CartContext';
 
 const Navbar: React.FC = () => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const location = useLocation();
+    const { totalItems } = useCart();
 
     useEffect(() => {
         const handleScroll = () => {
@@ -53,6 +55,17 @@ const Navbar: React.FC = () => {
                         </li>
                         <li className="nav-item">
                             <Link className={`nav-link px-3 ${location.pathname === '/contact' ? 'active text-primary fw-bold' : ''}`} to="/contact" onClick={closeMenu}>Contact</Link>
+                        </li>
+                        <li className="nav-item d-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+                            <Link to="/cart" className="btn btn-outline-dark rounded-circle position-relative p-2 d-flex align-items-center justify-content-center" style={{ width: '40px', height: '40px' }} onClick={closeMenu} aria-label="Cart">
+                                <i className="bi bi-cart3 fs-5"></i>
+                                {totalItems > 0 && (
+                                    <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style={{ fontSize: '0.65rem' }}>
+                                        {totalItems}
+                                        <span className="visually-hidden">items in cart</span>
+                                    </span>
+                                )}
+                            </Link>
                         </li>
                     </ul>
                 </div>
