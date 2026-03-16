@@ -15,7 +15,7 @@ import FloatingActions from './components/FloatingActions/FloatingActions';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/">
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes>
