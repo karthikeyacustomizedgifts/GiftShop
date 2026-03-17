@@ -1,6 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import { CartProvider } from './context/CartContext';
+import { Helmet } from 'react-helmet-async';
+import { SEO_KEYWORDS } from './config/data';
 
 // Pages
 import Home from './pages/Home';
@@ -19,6 +21,9 @@ function App() {
   return (
     <Router basename="/">
       <CartProvider>
+        <Helmet>
+          <meta name="keywords" content={SEO_KEYWORDS.join(', ')} />
+        </Helmet>
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>

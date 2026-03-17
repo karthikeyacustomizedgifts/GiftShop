@@ -35,6 +35,34 @@ export const FEATURED_PRODUCTS = PRODUCTS.filter(p => FEATURED_PRODUCTS_IDS.incl
 export const PRODUCT_CATEGORIES = ['All', 'LED Photo Frames', 'Anniversary Gifts', 'Birthday Gifts', 'Corporate Gifting'];
 
 // ---------------------------------------------------------------------------
+// SEO KEYWORDS
+// ---------------------------------------------------------------------------
+export const SEO_KEYWORDS = [
+    "Karthikeya Customized Gifts",
+    "Kakinada",
+    "Rajahmundry",
+    "Vijayawada",
+    "Visakhapatnam",
+    "Hyderabad",
+    "Andhra Pradesh",
+    "Telangana",
+    "Peddapuram",
+    "Samalkot",
+    "Tuni",
+    "Annavaram",
+    "Pitapuram",
+    "Customized Gifts",
+    "Personalized Gifts",
+    "Birthday Gifts",
+    "Anniversary Gifts",
+    "Corporate Gifting",
+    "LED Photo Frames",
+    "3D Crystal Cube",
+    "Custom Engraved Wooden Plaque",
+    "Photo Magic Mug"
+];
+
+// ---------------------------------------------------------------------------
 // INSPIRATION GALLERY
 // ---------------------------------------------------------------------------
 export const GALLERY_IMAGES = [
